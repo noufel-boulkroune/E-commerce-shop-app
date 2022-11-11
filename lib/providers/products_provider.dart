@@ -59,8 +59,7 @@ class ProductsProvider with ChangeNotifier {
     return _items.firstWhere((product) => product.id == id);
   }
 
-  static const String firebaseUrl =
-      "https://fluttershopapp2022-default-rtdb.firebaseio.com";
+  static const String firebaseUrl = "";
 
   Future<void> updateProduct(String id, Product newProduct) async {
     final url = Uri.parse('$firebaseUrl/Products/$id.json?auth=$authToken');

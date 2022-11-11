@@ -34,8 +34,7 @@ class Auth with ChangeNotifier {
     return null;
   }
 
-  static const String firebaseApiKey =
-      "AIzaSyCEwjICYw5fXf9TMGrr03RI1NC6UHkOS70";
+  static const String firebaseApiKey = "";
 
   Future<void> _authonticate(
       String email, String password, String authonticationType) async {

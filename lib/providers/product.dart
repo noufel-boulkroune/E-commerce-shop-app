@@ -20,8 +20,7 @@ class Product with ChangeNotifier {
       this.isFavorite = false});
 
   Future<void> toogleFavorite(String userId, String authToken) async {
-    const String firebaseUrl =
-        "https://fluttershopapp2022-default-rtdb.firebaseio.com";
+    const String firebaseUrl = "";
     final oldStatus = isFavorite;
     final url = Uri.parse(
         '$firebaseUrl/userFavorites/$userId/$id.json?auth=$authToken');

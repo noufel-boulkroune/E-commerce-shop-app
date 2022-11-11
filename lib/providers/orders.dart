@@ -30,8 +30,7 @@ class Orders with ChangeNotifier {
     return [..._orders];
   }
 
-  static const String firebaseUrl =
-      "https://fluttershopapp2022-default-rtdb.firebaseio.com";
+  static const String firebaseUrl = "";
 
   Future<void> fitchOrders() async {
     final url = Uri.parse('$firebaseUrl/Orders/$userId.json?auth=$authToken');
